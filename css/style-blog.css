@@ -1,0 +1,164 @@
+/* Styles de base repris de style.css */
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+nav{
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+  
+} 
+
+main {
+    margin-top: 100px; /* Ajoute un espace en haut pour éviter le chevauchement */
+}
+
+.Menu{
+    list-style-type: none;
+    justify-content: space-between;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    justify-content: space-around;
+    text-align: center;
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centrage horizontal du menu */
+    gap: 50px;
+    background: rgba(0, 0, 0, 0.5); /* Couleur de fond du menu */
+    border-radius: 50px; /* Coins arrondis */
+    border: #B1B1B1 solid;
+    line-height: 25px;
+    padding: 25px;
+    position: sticky; /* pour que le menu ne soit pas recouvert*/
+    z-index: 1000;
+    
+    
+}
+.Menu a:hover {
+    color: #968b84; /* Couleur du texte au survol */
+    background-color: #dddddd00; /* Couleur de fond au survol */
+    border-radius: 5px; /* Coins arrondis au survol */
+}
+a{
+    text-decoration: none; 
+color: white;
+ }
+
+/* Styles spécifiques au blog */
+.blog-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 80px 20px 20px;
+    max-width: 1200px; /* Limite la largeur du contenu */
+    margin: 0 auto; /* Centre le contenu horizontalement */
+}
+
+article {
+    background-color: transparent; /* Fond transparent */
+    border: 2px solid #968b84; /* Bordure */
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.article-image {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+article img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+article img:hover {
+    transform: scale(1.1);
+}
+
+.article-details {
+    margin-top: 10px;
+}
+
+article h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px; /* Espace entre le titre et l'extrait */
+}
+
+.date {
+    font-size: 0.8em;
+    color: #968b84; /* Couleur grise pour la date */
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+/* ... (styles des pop-ups) ... */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: darkred;
+}
+
+/* Style pour masquer les checkboxes */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Style pour les labels associés aux checkboxes */
+.article-link {
+    cursor: pointer;
+}
+
+/* Style pour afficher la pop-up lorsque la checkbox est cochée */
+input[type="checkbox"]:checked + .popup {
+    display: block;
+}
+

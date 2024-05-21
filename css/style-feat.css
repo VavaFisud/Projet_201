@@ -1,0 +1,106 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Barre de navigation et vidéo d'introduction */
+
+nav {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Menu {
+    list-style-type: none;
+    justify-content: space-between;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    border: #B1B1B1 solid;
+    line-height: 25px;
+    padding: 25px;
+    position: sticky;
+    z-index: 1000;
+}
+
+.Menu a:hover {
+    color: #968b84;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Fin accueil */
+
+
+
+
+/* Bas de page */
+
+.bas{
+    background-color: black;
+    height: auto;
+    bottom: 0;
+    }
+    .liens-bas {
+    display: block;
+    list-style-type: none;
+    justify-content: space-between;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: auto;
+    
+    }
+    .liens-bas a{
+    margin-bottom: 20px;
+    }
+    .liens-bas a:hover {
+     color: rgb(66, 66, 66);
+    }
+    
+    
+    .réseaux{
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    position:  relative;
+    }
+    
+    
+    .réseaux img{
+    
+        margin: 5px;
+    }
+    
+    .insta{
+    height: 35px;
+    }
+    .spotify{
+    height: 40px;
+    }
+    .youtube{
+    height: 35px;
+    }
+    
+    /* .trois{ 
+    position: relative;
+    height: 100px;
+    left: 50%;
+    top: 50%; /* Centrer verticalement 
+        transform: translate(-50%, -50%); /* Ajuster pour centrer correctement */
